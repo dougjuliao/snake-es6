@@ -78,24 +78,24 @@ let Snake = {
 	drawElements: {
 		snake : (x,y) => {
 			let size = Snake.snakeSize;
-			Snake.ctx.fillStyle = '#252F52';
+			Snake.ctx.fillStyle = '#555';
 			Snake.ctx.fillRect(x*size, y*size, size, size);
 		},
 		food: (x,y) => {
 			let size = Snake.snakeSize;
-	        Snake.ctx.fillStyle = '#252F52';
+	        Snake.ctx.fillStyle = '#555';
 	        Snake.ctx.fillRect(x*size, y*size, size, size);
 		},
 		score: () => {
 			let score = "Score: " + Snake.score;
-	        Snake.ctx.fillStyle = '#252F52';
+	        Snake.ctx.fillStyle = '#555';
 	        Snake.ctx.fillText(score, 200, Snake.height-5);
 		},
 		paint: () => {
 			//background
-		    Snake.ctx.fillStyle = '#ccc';
+		    Snake.ctx.fillStyle = '#b7d49a';
 		    Snake.ctx.fillRect(0, 0, Snake.width, Snake.height);
-		    Snake.ctx.strokeStyle = '#000';
+		    Snake.ctx.strokeStyle = '#6c8237';
 		    Snake.ctx.strokeRect(0, 0, Snake.width, Snake.height);
 
 		    let snakeX = Snake.snakeBody[0].x,
